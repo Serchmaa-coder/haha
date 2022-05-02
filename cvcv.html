@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV</title>
+    <style>
+                    body {
+                padding: 0;
+                margin: 0;
+                background-color: #e6e6e6;
+                display: flex;
+                justify-content: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            .con {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                flex-direction: row;
+                height: 800px;
+                width: 600px;
+            }
+            
+            .leftPanel{
+                display: flex;
+                height: 790px;
+                width: 220px;
+                background-color: #e6e6e6;
+                margin-left: 5px;
+                margin-top: 5px;
+                flex-direction: column;
+            }
+            .nam{
+                color: white;
+                position: absolute;
+                font-size: 20px;
+                margin-top: 40px;
+                margin-left: 70px;
+            }
+            .name{
+                margin-top: 60px;
+                color: white;
+                position: absolute;
+                font-size: 20px;
+                margin-left: 50px;
+            }
+            .round{
+                position: absolute;
+                height: 180px;
+                width: 220px;
+                background-color: black;
+                border-radius: 50%;
+            }
+            .topr{
+                position: relative;
+                height: 100px;
+                width: 220px;
+                background-color: black;
+            }
+            .pic{
+                position: absolute;
+                background-color: #c8c8c8;
+                margin-top: 90px;
+                margin-left: 50px;
+                border-radius: 50%;
+                border:solid 4px #c8c8c8 ;
+            }
+            .pro{
+                border-radius: 50%;
+                border:solid 2px #c8c8c8 ;
+            }
+            .p{
+                height: 160px;
+                width: 200px;
+            }
+            .personal{
+                margin-left: 10px;
+                font-size: 15px;
+                color: black;
+                height: 20px;
+                width: 200px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+            .divone{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                width: 200px;
+                margin-left: 10px;
+            }
+            .divv{
+                display: flex;
+                margin-left: 10px;
+                font-size: 10px;
+                color: black;
+                margin-left: 10px;
+            }
+            .icon{
+                display: flex;
+            }
+            .skill{
+                margin-left: 10px;
+                margin-top: 10px;
+                font-size: 15px;
+                color: black;
+                height: 20px;
+                width: 200px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+            .divtwo{
+                width: 200px;
+                display: flex;
+                margin-left: 10px;
+                font-size: 10px;
+                justify-content: space-between;
+            }
+            .languages{
+                margin-left: 10px;
+                margin-top: 10px;
+                font-size: 15px;
+                color: black;
+                height: 20px;
+                width: 200px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+            .divthree{
+                width: 200px;
+                display: flex;
+                margin-left: 10px;
+                font-size: 10px;
+                justify-content: space-between;
+            }
+            .hobby{
+                margin-left: 10px;
+                margin-top: 10px;
+                font-size: 15px;
+                color: black;
+                height: 20px;
+                width: 200px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+            .lin{
+                display: flex;
+                width: 200px;
+                font-size: 10px;
+                margin-left: 10px;
+            
+            }
+            .divfour{
+                display: flex;
+                flex-direction: row;
+                width: 200px;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+            .quality{
+                margin-left: 10px;
+                font-size: 15px;
+                color: black;
+                height: 20px;
+                width: 200px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+            .qua{
+                display: flex;
+                width: 200px;
+                margin-left: 10px;
+                font-size: 10px;
+            }
+            .divfive{
+                display: flex;
+                flex-direction: row;
+                width: 200px;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+            .rightPanel{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                height: 800px;
+                width: 370px;
+            }
+            .edu{
+                margin-left: 10px;
+                font-size: 25px;
+                color: gray;
+                height: 30px;
+                width: 350px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+            .group{
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                margin-right: 10px;
+            }
+            .gr{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .ed{
+                font-size: 15px;
+                color: black;
+            }
+            .date{
+                font-size: 10px;
+                color: gray;
+            }
+            .loc{
+                font-size: 10px;
+                color:#c8c8c8;
+            }
+            .Ach{
+                margin-left: 10px;
+                margin-top: 10px;
+                font-size: 25px;
+                color: gray;
+                height: 30px;
+                width: 350px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+            .achi{
+                font-size: 15px;
+                margin-right: 10px;
+            }
+            .fam{
+                margin-left: 10px;
+                margin-top: 10px;
+                font-size: 25px;
+                color: gray;
+                height: 30px;
+                width: 350px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+            .fami{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-size: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .other{
+                margin-left: 10px;
+                margin-top: 10px;
+                font-size: 25px;
+                color: gray;
+                height: 30px;
+                width: 350px;
+                border-bottom: solid 2px #c8c8c8;
+            }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="leftPanel">
+            <div class="round"></div>
+            <div class="topr"></div>
+            <div class="nam">Сэрчмаа</div>
+            <div class="name">Баатарчулуун</div>
+            <div class="pic">
+            <img class="pro" src="08.jpg" alt="Profile picture" width="110px" height="150px"/> 
+            </div>
+            <div class="p"></div>
+            <div class="personal">Personal Details</div>
+                <div class="divone">
+                <img class="icon" src="user.png" alt="user" width="15px" height="15px"/> 
+                <div class="divv">Сэрчмаа Баатарчулуун</div></div>
+                <div class="divone">
+                <img class="icon" src="email-2.png" alt="user" width="15px" height="15px" />
+                <div class="divv">minsera1029@gmail.com</div></div>
+                <div class="divone">
+                <img class="icon" src="phone-call.png" alt="user" width="15px" height="15px" />
+                <div class="divv">99508695</div></div>
+                <div class="divone">
+                <img class="icon" src="home.png" alt="user" width="15px" height="15px" />
+                <div class="divv">Баянгол Дүүрэг, 7-р хороо, 12-р байр</div></div>
+                <div class="divone">
+                <img class="icon" src="calendar.png" alt="user" width="15px" height="15px" />
+                <div class="divv">2002/10/29</div></div>
+                <div class="divone">
+                <img class="icon" src="gender.png" alt="user" width="15px" height="15px" />
+                <div class="divv">Эм</div></div>
+                <div class="divone">
+                <img class="icon" src="report.png" alt="user" width="15px" height="15px" />
+                <div class="divv">Монгол</div></div>
+            
+            <div class="skill">Skills</div>
+                <div class="divtwo">
+                <div class="text">HTML</div>
+                      <div class="rating">
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                      </div></div>
+                <div class="divtwo">
+                <div class="text">CSS</div>
+                      <div class="rating">
+                      <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          </div></div>
+                <div class="divtwo">
+                <div class="text">Javascript</div>
+                      <div class="rating">
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px"/>
+                          </div></div>
+                <div class="divtwo">
+                <div class="text">C</div>
+                     <div class="rating">
+                     <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px"/>
+                         </div></div>
+                <div class="divtwo">
+                <div class="text">C++</div>
+                      <div class="rating">
+                      <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px" />
+                          </div></div>
+                <div class="divtwo">
+                <div class="text">Java</div>
+                     <div class="rating">
+                     <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px"/>
+                         </div></div>
+            <div class="languages">Languages</div>
+            <div class="divthree">
+                <div class="text">Англи хэл</div>
+                     <div class="rating">
+                     <img class="rate" src="circle.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                         </div></div>
+                         <div class="divthree">
+                <div class="text">Испани хэл</div>
+                     <div class="rating">
+                     <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px"/>
+                         </div></div>
+                         <div class="divthree">
+                <div class="text">Орос хэл</div>
+                     <div class="rating">
+                     <img class="rate" src="circle.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                         </div></div>
+                         <div class="divthree">
+                <div class="text">Солонгос хэл</div>
+                     <div class="rating">
+                     <img class="rate" src="circle.png" alt="circle" width="10px" height="10px"/>
+                          <img class="rate" src="circle.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px"height="10px"/>
+                         </div></div>
+                         <div class="divthree">
+                <div class="text">Япон хэл</div>
+                     <div class="rating">
+                     <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px" />
+                          <img class="rate" src="circle-2.png" alt="circle" width="10px" height="10px" />
+                         </div></div>
+                    <div class="hobby">Hobby</div>
+                    <div class="divfour">
+                        <img class="icon" src="paint.png" alt="user" width="15px" height="15px" /> 
+                        <div class="lin">Зураг</div></div>
+                    <div class="divfour">
+                        <img class="icon" src="mic.png" alt="user" width="15px" height="15px" /> 
+                        <div class="lin">Дуулах</div></div>
+                    <div class="divfour">
+                        <img class="icon" src="ball.png" alt="user" width="15px" height="15px" /> 
+                        <div class="lin">Бүжиглэх</div></div>
+                
+                <div class="quality">Qualities</div>
+                <div class="divfive">
+                <img class="icon" src="group.png" alt="user" width="15px" height="15px" /> 
+                <div class="qua">Багаар ажиллах</div></div>
+                <div class="divfive">
+                <img class="icon" src="speech.png" alt="user" width="15px" height="15px" /> 
+                <div class="qua">Бусадтай харилцах</div></div></div>
+            
+        <div class="rightPanel">
+            <div class="edu">Education</div>
+                 <div class="group">
+                       <div class="gr">
+                           <div class="ed">Сургуулиас өмнөх боловсрол</div>
+                           <div class="date">Sep 2006 - May 2008</div>
+                       </div>
+                       <div class="loc">95-р цэцэрлэг, Улаанбаатар</div>
+                 </div>
+                 <div class="group">
+                       <div class="gr">
+                       <div class="ed">Дунд боловсрол</div>
+                       <div class="date">Sep 2008 - Jun 2017</div>
+                       </div>
+                       <div class="loc">95-р цэцэрлэг, Улаанбаатар</div>
+                 </div>
+                 <div class="group">
+                       <div class="gr">
+                       <div class="ed">Бүрэн дунд боловсрол</div>
+                       <div class="date">Sep 2017 - June 2020</div>
+                       </div>
+                       <div class="loc">95-р цэцэрлэг, Улаанбаатар</div>
+                 </div>
+                 <div class="group">
+                     <div class="gr">
+                     <div class="ed">Курс</div>
+                     <div class="date">Sep 2020 - Present</div>
+                     </div>
+                       <div class="loc">95-р цэцэрлэг, Улаанбаатар</div>
+                 </div>
+            <div class="Ach">Achievement</div>
+            <ul class="achi">
+                <li>Дүүргийн англи хэлний олимпиадад тэргүүн байр</li>
+                <li>Сургуулийн орос хэлний үг цээжлэх тэмцээнд дэд байр</li>
+                <li>Дүүргийн загварын тэмцээнд дэд байр</li>
+                <li>Сургуулийн математикийн олимпиадад дэд байр</li>
+            </ul>
+            <div class="fam">Family</div>
+            <div class="fami">Ам бүл: 10</div>
+            <div class="fami">
+            <div>Эцгийн овог нэр: Гэндэн Баатарчулуун</div>
+            <div>Боловсрол: Бүрэн дунд</div></div>
+            <div class="fami">
+            <div>Эхийн овог нэр: Бадарч Сэржмядаг</div>
+            <div>Боловсрол: Бүрэн дунд</div></div>
+            <div class="other">Experience</div>
+            <div class="other">Recommedation</div>
+            <div class="other">Other</div>
+            <div class="other">Other</div>
+            <div class="other">Other</div>
+            <div class="other">Other</div>
+            <div class="other">Other</div>
+            <div class="other">Other</div>
+        </div>
+    </div>
+
+</body>
+</html>
